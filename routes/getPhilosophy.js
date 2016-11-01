@@ -108,4 +108,3 @@ exports.getPhilosophy = function( req, res ) {
 
 	doGetPhilosophy( request.query.title, response );
 };
-

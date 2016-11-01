@@ -1,5 +1,5 @@
 {
-  "name": "nodechallenge",
+  "name": "node-challenge",
   "version": "0.0.1",
   "description": "app for getting philosophy using nodejs",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saudiatepace/nodeChallenge.git"
+    "url": "git+https://github.com/saudiatepace/node-challenge.git"
   },
   "keywords": [
     "nodejs"
@@ -16,9 +16,9 @@
   "author": "Saudia Tepace",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/saudiatepace/nodeChallenge/issues"
+    "url": "https://github.com/saudiatepace/node-challenge/issues"
   },
-  "homepage": "https://github.com/saudiatepace/nodeChallenge#readme",
+  "homepage": "https://github.com/saudiatepace/node-challenge#readme",
   "dependencies": {
     "cheerio": "^0.22.0",
     "express": "3.5.1",
