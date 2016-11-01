@@ -29,7 +29,7 @@ cd node-challenge
 We have tool dependency in this project.  The tools help
 us manage and test the application.
 
-* We get the tools we depend upon via `npm`, the [node package manager][npm].
+* We get the tools we depend upon via `npm`, the [node package manager](https://docs.npmjs.com/).
 
 ```
 npm install
