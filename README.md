@@ -17,7 +17,7 @@ Also, you need to install postman to test the api. Check this link [https://www.
 
 ### Clone node-challenge
 
-Clone the node-challenge repository using [git][git]:
+Clone the node-challenge repository using [git](http://gitref.org/creating/#clone):
 
 ```
 git clone https://github.com/saudiatepace/node-challenge/
