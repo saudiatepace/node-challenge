@@ -56,15 +56,15 @@ nodeChallenge/          --> project folder name
 
 ### Running the Application
 
-We have preconfigured the project with a simple development web server.  The simplest way to start
-this server is:
+We have preconfigured the project with a simple development web server. The simplest way to start this server is:
 
 ```
 npm start
 ```
-Now, your server is already running in http://localhost:8000.
 
-Then open the postman do the following:
+Now, notice that your server is already running in http://localhost:8000.
+
+Then open the postman and perform the following:
 
 * Type this url in the request URL field
 ```
@@ -83,7 +83,7 @@ While waiting for the response, check your terminal. List of the current tittle 
 
 ## Ouput in Postman
 
-The out in postman will be displayed in JSON format.
+The output in postman will be displayed in JSON format.
 
 Example Ouput:
 
