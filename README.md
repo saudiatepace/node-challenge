@@ -66,6 +66,8 @@ Now, notice that your server is already running in http://localhost:8000.
 
 Then open the postman and perform the following:
 
+* Select `POST` method
+
 * Type this url in the request URL field
 ```
 localhost:4000/getPhilosophy
