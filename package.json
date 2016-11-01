@@ -4,7 +4,6 @@
   "description": "app for getting philosophy using nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
     "start": "node app.js"
   },
   "repository": {
@@ -22,14 +21,8 @@
   "homepage": "https://github.com/saudiatepace/nodeChallenge#readme",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "ejs": "*",
     "express": "3.5.1",
-    "jquery": "^3.1.1",
     "request": "^2.51.0",
-    "underscore": "^1.8.3",
-    "validator-js": "^0.2.1"
-  },
-  "devDependencies": {
-    "selenium-webdriver": "~2.42.1"
+    "underscore": "^1.8.3"
   }
 }
