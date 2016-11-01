@@ -66,18 +66,18 @@ Now, your server is already running in http://localhost:8000.
 
 Then open the postman do the following:
 
-1. Type this url in the request URL field
+* Type this url in the request URL field
 ```
 localhost:4000/getPhilosophy
 ```
-2. Click Params and enter these:
+* Click Params and enter these:
 ```
 {
   key : title
   value : any value you want to test ( e.g. Wikipedia:Getting to Philosophy)
 }
 ```
-3. Click send button
+* Click send button
 
 While waiting for the response, check your terminal. List of the current tittle were displayed until Philosophy page will be reached.
 
