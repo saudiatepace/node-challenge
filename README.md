@@ -26,7 +26,7 @@ cd node-challenge
 
 ### Install Dependencies
 
-We have tool dependency in this project.  The tools help
+We have tool dependency in this project.  This tool help
 us manage and test the application.
 
 * We get the tools we depend upon via `npm`, the [node package manager](https://docs.npmjs.com/).
@@ -35,7 +35,7 @@ us manage and test the application.
 npm install
 ```
 
-You should find that you have two new folders in your project.
+You should find that you have the new folder in your project.
 
 * `node_modules` - contains the npm packages for the tools we need
 
