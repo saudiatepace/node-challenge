@@ -70,9 +70,9 @@ Then open the postman and perform the following:
 
 * Type this url in the request URL field
 ```
-localhost:4000/getPhilosophy
+localhost:8000/getPhilosophy
 ```
-* Click Params and enter these:
+* Click Params and enter this:
 ```
 {
   key : title
