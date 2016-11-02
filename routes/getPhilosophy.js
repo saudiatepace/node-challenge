@@ -41,7 +41,7 @@ function checkLink( link ) {
 function doGetPhilosophy (req, res) {
 	var selector = '#mw-content-text > p a, #mw-content-text > ul a';
 	var title    = req;
-	var url      = 'http://en.wikipedia.com/wiki/'+ title;
+	var url      = 'http://en.wikipedia.com'+ title;
 
 	request(url, function ( error, response, data ) {
 		if (error || response.statusCode !== 200) {
@@ -66,6 +66,7 @@ function doGetPhilosophy (req, res) {
 			// If we arrived at 'Philosophy', VICTORY!
 			if (curr_title === 'Philosophy') {
 				var pathArr = _.extend( {}, path );
+
 				return res.json( pathArr );
 			}
 
@@ -84,13 +85,9 @@ function doGetPhilosophy (req, res) {
 			 ii++;
 			}
 
-			// splitting the next url link to serve as parameter for the
-			// recursive function
-			var nextUrl   = url.split( "/" );
-			var nextTitle = nextUrl[2];
-
+			var nextUrl = url;
 			// perform recursion
-			doGetPhilosophy( nextTitle, res );
+			doGetPhilosophy( nextUrl, res );
 
 		} else { // If it is not an actual Wikipedia article, callback error and return
 				console.log('Article does not exist');
@@ -101,10 +98,16 @@ function doGetPhilosophy (req, res) {
 	} );
 }
 
-// method that's being called in POST method
+// method that's being called in GET method
 exports.getPhilosophy = function( req, res ) {
 	var response = res;
 	var request  = req;
+	var origURL  = '/wiki/'+request.query.title;
 
-	doGetPhilosophy( request.query.title, response );
+	visited = [];
+	path = [];
+
+	visited.push( origURL );
+
+	doGetPhilosophy( origURL, response );
 };

@@ -1,6 +1,6 @@
 # Getting to Philosophy Challenge
 
-This project is about an api that will return a list of page title until you have reach the Philosophy page in Wikipedia using [NodeJS](https://nodejs.org/en/) programming language.
+This project is about an api that will return a list of page title until you have reach the Philosophy page in Wikipedia using [NodeJS](https://nodejs.org/en/).
 
 ## Getting Started
 
@@ -64,9 +64,11 @@ npm start
 
 Now, notice that your server is already running in http://localhost:8000.
 
-Then open the postman and perform the following:
+There are three ways in running this project - via Postman, curl command or browser.
 
-* Select `POST` method
+## Running the application via POSTMAN
+
+* Select `GET` method
 
 * Type this url in the request URL field
 ```
@@ -81,7 +83,22 @@ localhost:8000/getPhilosophy
 ```
 * Click send button
 
-While waiting for the response, check your terminal. List of the current tittle were displayed until Philosophy page will be reached.
+## Running the application via curl command
+
+* Type this command in the terminal
+
+```
+curl -G "http://localhost:8000/getPhilosophy" --data-urlencode "title=<any data you want to search> (e.g. Wikipedia:Getting to Philosophy)"
+```
+
+## Running the application via Browser ( e.g. Firefox )
+
+* Type this url in the search address field
+```
+localhost:8000/getPhilosophy/title=<any data you want to search>(e.g. Mathematics)
+```
+
+While waiting for the response, check your terminal. List of the visited page titles before it reaches to Philosophy were displayed.
 
 ## Ouput in Postman
 
