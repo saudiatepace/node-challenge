@@ -41,16 +41,17 @@ You should find that you have the new folder in your project.
 ## Project Structure
 
 ```
-nodeChallenge/          --> project folder name
-  routes                --> route files storage
-    getPhilosophy.js/   --> file that serves as the route for getting philosophy api
-     index.js           --> main file for the routes
-  .editorconfig         --> reference for editor code spacing and indentions
-  .eslintignore         --> specifies the files to be ignored from eslint
-  .gitattribute         --> auto detect text files and perform LF normalization
-  app.js                --> main file that execute and runs the server
-  package.json          --> file that ensures the right version of the package is being installed
-  README.md             --> serves as the documentation of the project
+nodeChallenge/                      --> project folder name
+  routes                            --> route files storage
+    getPhilosophy.js/               --> route for getting philosophy api
+	getPhilosophyByRandomData.js/   --> route for getting philosophy using random data from wikipedia
+    index.js                        --> main file for the routes
+  .editorconfig                     --> reference for editor code spacing and indentions
+  .eslintignore                     --> specifies the files to be ignored from eslint
+  .gitattribute                     --> auto detect text files and perform LF normalization
+  app.js                            --> main file that execute and runs the server
+  package.json                      --> file that ensures the right version of the package is being installed
+  README.md                         --> serves as the documentation of the project
 ```
 
 ### Running the Application
