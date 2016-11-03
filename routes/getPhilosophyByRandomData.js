@@ -99,11 +99,11 @@ function doGetPhilosophy (req, res) {
 	} );
 }
 
-// method that's being called in GET request
-exports.getPhilosophy = function( req, res ) {
+// method that's being called in GET method
+exports.getPhilosophyByRandomData = function( req, res ) {
 	var response = res;
 	var request  = req;
-	var origURL  = '/wiki/'+request.query.title;
+	var origURL  = '/wiki/Special:Random';
 
 	visited = [];
 	path = [];

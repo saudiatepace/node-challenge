@@ -1,10 +1,11 @@
 'use strict';
 
-var express       = require('express');
-var routes        = require('./routes');
-var getPhilosophy = require('./routes/getPhilosophy');
-var http          = require('http');
-var path          = require('path');
+var express                   = require('express');
+var routes                    = require('./routes');
+var getPhilosophy             = require('./routes/getPhilosophy');
+var getPhilosophyByRandomData = require('./routes/getPhilosophyByRandomData');
+var http                      = require('http');
+var path                      = require('path');
 
 var app = express();
 
@@ -23,6 +24,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/getPhilosophy', getPhilosophy.getPhilosophy);
+app.get('/getPhilosophyByRandomData', getPhilosophyByRandomData.getPhilosophyByRandomData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

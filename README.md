@@ -98,7 +98,16 @@ curl -G "http://localhost:8000/getPhilosophy" --data-urlencode "title=<any data 
 localhost:8000/getPhilosophy/title=<any data you want to search>(e.g. Mathematics)
 ```
 
-While waiting for the response, check your terminal. List of the visited page titles before it reaches to Philosophy were displayed.
+## Running the application using Random Data
+You can also run this project by using a random data in Wikipedia.
+```
+curl -G "http://localhost:8000/getPhilosophyByRandomData"
+```
+```
+http://localhost:8000/getPhilosophyByRandomData
+```
+
+While waiting for the response, check your terminal. List of the visited page title before it reaches to Philosophy were displayed.
 
 ## Ouput in Postman
 
