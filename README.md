@@ -26,8 +26,7 @@ cd node-challenge
 
 ### Install Dependencies
 
-We have tool dependency in this project.  This tool help
-us manage and test the application.
+We have tool dependency in this project.  This tool help us manage and test the application.
 
 * We get the tools we depend upon via `npm`, the [node package manager](https://docs.npmjs.com/).
 
@@ -109,9 +108,9 @@ http://localhost:8000/getPhilosophyByRandomData
 
 While waiting for the response, check your terminal. List of the visited page title before it reaches to Philosophy were displayed.
 
-## Ouput in Postman
+## Expected Output
 
-The output in postman will be displayed in JSON format.
+The output will display the list of the visited pages prior to Philosophy page written in JSON format.
 
 Example Ouput:
 
